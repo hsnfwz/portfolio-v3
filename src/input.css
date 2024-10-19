@@ -26,6 +26,22 @@
 
 @layer base {
   @font-face {
+    font-family: 'Montserrat Bold';
+    font-display: block;
+    src: url(./fonts/Montserrat-Bold.woff2) format('woff2');
+  }
+}
+
+@layer base {
+  @font-face {
+    font-family: 'Montserrat Light';
+    font-display: block;
+    src: url(./fonts/Montserrat-Light.woff2) format('woff2');
+  }
+}
+
+@layer base {
+  @font-face {
     font-family: 'Montserrat Thin';
     font-display: block;
     src: url(./fonts/Montserrat-Thin.woff2) format('woff2');

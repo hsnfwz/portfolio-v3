@@ -571,6 +571,22 @@ video {
 }
 
 @font-face {
+  font-family: 'Montserrat Bold';
+
+  font-display: block;
+
+  src: url(./fonts/Montserrat-Bold.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Montserrat Light';
+
+  font-display: block;
+
+  src: url(./fonts/Montserrat-Light.woff2) format('woff2');
+}
+
+@font-face {
   font-family: 'Montserrat Thin';
 
   font-display: block;
@@ -674,11 +690,6 @@ video {
   margin: auto;
 }
 
-.mx-auto {
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .block {
   display: block;
 }
@@ -713,10 +724,6 @@ video {
 
 .h-\[48px\] {
   height: 48px;
-}
-
-.h-full {
-  height: 100%;
 }
 
 .min-h-\[calc\(100vh-48px\)\] {
@@ -777,10 +784,6 @@ video {
   align-items: center;
 }
 
-.items-stretch {
-  align-items: stretch;
-}
-
 .justify-center {
   justify-content: center;
 }
@@ -813,10 +816,6 @@ video {
   align-self: center;
 }
 
-.self-stretch {
-  align-self: stretch;
-}
-
 .overflow-hidden {
   overflow: hidden;
 }
@@ -837,6 +836,11 @@ video {
   border-width: 2px;
 }
 
+.border-black {
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity));
+}
+
 .border-sky-300 {
   --tw-border-opacity: 1;
   border-color: rgb(125 211 252 / var(--tw-border-opacity));
@@ -847,14 +851,14 @@ video {
   border-color: rgb(253 224 71 / var(--tw-border-opacity));
 }
 
-.border-black {
-  --tw-border-opacity: 1;
-  border-color: rgb(0 0 0 / var(--tw-border-opacity));
-}
-
 .bg-sky-200 {
   --tw-bg-opacity: 1;
   background-color: rgb(186 230 253 / var(--tw-bg-opacity));
+}
+
+.bg-sky-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(125 211 252 / var(--tw-bg-opacity));
 }
 
 .bg-white {
@@ -869,11 +873,6 @@ video {
 .bg-yellow-300 {
   --tw-bg-opacity: 1;
   background-color: rgb(253 224 71 / var(--tw-bg-opacity));
-}
-
-.bg-sky-300 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(125 211 252 / var(--tw-bg-opacity));
 }
 
 .bg-gradient-to-b {
@@ -955,10 +954,6 @@ video {
   stroke: #000;
 }
 
-.stroke-white {
-  stroke: #fff;
-}
-
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
@@ -978,18 +973,14 @@ video {
   padding-right: 1rem;
 }
 
-.py-2 {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-}
-
 .py-16 {
   padding-top: 4rem;
   padding-bottom: 4rem;
 }
 
-.text-left {
-  text-align: left;
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 .text-center {
@@ -1010,6 +1001,14 @@ video {
 
 .font-montserrat-thin {
   font-family: Montserrat Thin;
+}
+
+.font-montserrat-bold {
+  font-family: Montserrat Bold;
+}
+
+.font-montserrat-light {
+  font-family: Montserrat Light;
 }
 
 .text-2xl {
@@ -1241,6 +1240,11 @@ svg {
   }
 }
 
+.hover\:bg-black:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+
 .hover\:bg-sky-300:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(125 211 252 / var(--tw-bg-opacity));
@@ -1255,11 +1259,6 @@ svg {
   background-color: rgb(253 224 71 / var(--tw-bg-opacity));
 }
 
-.hover\:bg-black:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
-}
-
 .hover\:text-white:hover {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -1267,10 +1266,6 @@ svg {
 
 .group:hover .group-hover\:stroke-white {
   stroke: #fff;
-}
-
-.group:hover .group-hover\:stroke-black {
-  stroke: #000;
 }
 
 @media (min-width: 1024px) {
