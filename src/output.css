@@ -964,6 +964,11 @@ video {
      object-position: top;
 }
 
+.object-center {
+  -o-object-position: center;
+     object-position: center;
+}
+
 .p-4 {
   padding: 1rem;
 }
