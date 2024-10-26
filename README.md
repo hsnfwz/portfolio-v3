@@ -1,7 +1,5 @@
 # Portfolio
 
-![Portfolio](src/images/portfolio.webp)
-
 [Portfolio](https://www.husseinfawaz.ca)
 
 ## Description
